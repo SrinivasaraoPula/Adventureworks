@@ -1,0 +1,30 @@
+{
+	"name": "ds_source_github",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_source_github",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"relativepath": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().relativepath",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

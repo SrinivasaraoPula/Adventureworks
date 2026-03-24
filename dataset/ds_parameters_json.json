@@ -1,0 +1,32 @@
+{
+	"name": "ds_parameters_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_sink_adls",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "parameters.json",
+				"fileSystem": "parameteres"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"relativepath": {
+					"type": "string"
+				},
+				"foldername": {
+					"type": "string"
+				},
+				"filename": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
