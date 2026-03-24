@@ -1,0 +1,9 @@
+{
+	"name": "AdventureworkssrinuAdf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3258992e-86d9-4ac1-9b70-9dea2a155af2",
+		"tenantId": "66000125-b40a-4837-a4f7-fa53b888148f"
+	}
+}
