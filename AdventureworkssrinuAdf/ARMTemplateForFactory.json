@@ -235,7 +235,8 @@
 						"folderPath": {
 							"value": "@dataset().foldername",
 							"type": "Expression"
-						}
+						},
+						"fileSystem": "silver"
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
@@ -274,7 +275,7 @@
 					},
 					"columnDelimiter": ",",
 					"escapeChar": "\\",
-					"firstRowAsHeader": false,
+					"firstRowAsHeader": true,
 					"quoteChar": "\""
 				},
 				"schema": []
